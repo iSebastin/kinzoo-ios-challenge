@@ -15,7 +15,6 @@ Build an iOS project with the given public API below
 * Should use a well known async image loading library
 * Should use SPM or Cocoapods for dependency management
 * Should follow Apple's Human Interface Guidelines
-* Should handle pagination
 
 ### Nice-to-haves ###
 
