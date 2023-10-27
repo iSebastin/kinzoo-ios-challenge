@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F03360242AEC09F5000E7748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360232AEC09F5000E7748 /* AppDelegate.swift */; };
 		F03360262AEC09F5000E7748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360252AEC09F5000E7748 /* SceneDelegate.swift */; };
-		F03360282AEC09F5000E7748 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360272AEC09F5000E7748 /* ViewController.swift */; };
+		F03360282AEC09F5000E7748 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360272AEC09F5000E7748 /* CharactersViewController.swift */; };
 		F033602E2AEC09F6000E7748 /* KinzooTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F033602C2AEC09F6000E7748 /* KinzooTask.xcdatamodeld */; };
 		F03360302AEC09F7000E7748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F033602F2AEC09F7000E7748 /* Assets.xcassets */; };
 		F03360332AEC09F7000E7748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F03360312AEC09F7000E7748 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,18 @@
 		F033605D2AEC0AB1000E7748 /* APIRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605C2AEC0AB1000E7748 /* APIRequestConfig.swift */; };
 		F033605F2AEC0AC1000E7748 /* APIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605E2AEC0AC1000E7748 /* APIResponseHandler.swift */; };
 		F03360612AEC0AD6000E7748 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360602AEC0AD6000E7748 /* APIManager.swift */; };
+		F03360662AEC2D04000E7748 /* CharaterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360652AEC2D04000E7748 /* CharaterResponse.swift */; };
+		F03360682AEC2DC0000E7748 /* CharacterCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360672AEC2DC0000E7748 /* CharacterCardCell.swift */; };
+		F033606A2AEC2DE5000E7748 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360692AEC2DE5000E7748 /* CharacterPresenter.swift */; };
+		F03360722AEC2E29000E7748 /* Itim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606C2AEC2E29000E7748 /* Itim-Regular.ttf */; };
+		F03360732AEC2E29000E7748 /* SignikaNegative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606D2AEC2E29000E7748 /* SignikaNegative-Bold.ttf */; };
+		F03360742AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606E2AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf */; };
+		F03360752AEC2E29000E7748 /* SignikaNegative-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606F2AEC2E29000E7748 /* SignikaNegative-Medium.ttf */; };
+		F03360762AEC2E29000E7748 /* SignikaNegative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03360702AEC2E29000E7748 /* SignikaNegative-Regular.ttf */; };
+		F03360772AEC2E29000E7748 /* SignikaNegative-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03360712AEC2E29000E7748 /* SignikaNegative-Light.ttf */; };
+		F033607A2AEC2E42000E7748 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360792AEC2E42000E7748 /* Font.swift */; };
+		F033607E2AEC2EF4000E7748 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F033607D2AEC2EF4000E7748 /* SDWebImage */; };
+		F03360802AEC2EF7000E7748 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F033607F2AEC2EF7000E7748 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +55,7 @@
 		F03360202AEC09F5000E7748 /* KinzooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinzooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03360232AEC09F5000E7748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F03360252AEC09F5000E7748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F03360272AEC09F5000E7748 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F03360272AEC09F5000E7748 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		F033602D2AEC09F6000E7748 /* KinzooTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KinzooTask.xcdatamodel; sourceTree = "<group>"; };
 		F033602F2AEC09F7000E7748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F03360322AEC09F7000E7748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +69,16 @@
 		F033605C2AEC0AB1000E7748 /* APIRequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestConfig.swift; sourceTree = "<group>"; };
 		F033605E2AEC0AC1000E7748 /* APIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseHandler.swift; sourceTree = "<group>"; };
 		F03360602AEC0AD6000E7748 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F03360652AEC2D04000E7748 /* CharaterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaterResponse.swift; sourceTree = "<group>"; };
+		F03360672AEC2DC0000E7748 /* CharacterCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardCell.swift; sourceTree = "<group>"; };
+		F03360692AEC2DE5000E7748 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		F033606C2AEC2E29000E7748 /* Itim-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Itim-Regular.ttf"; sourceTree = "<group>"; };
+		F033606D2AEC2E29000E7748 /* SignikaNegative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Bold.ttf"; sourceTree = "<group>"; };
+		F033606E2AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-SemiBold.ttf"; sourceTree = "<group>"; };
+		F033606F2AEC2E29000E7748 /* SignikaNegative-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Medium.ttf"; sourceTree = "<group>"; };
+		F03360702AEC2E29000E7748 /* SignikaNegative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Regular.ttf"; sourceTree = "<group>"; };
+		F03360712AEC2E29000E7748 /* SignikaNegative-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SignikaNegative-Light.ttf"; sourceTree = "<group>"; };
+		F03360792AEC2E42000E7748 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360802AEC2EF7000E7748 /* SDWebImageMapKit in Frameworks */,
+				F033607E2AEC2EF4000E7748 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +115,7 @@
 				F033603C2AEC09F7000E7748 /* KinzooTaskTests */,
 				F03360462AEC09F7000E7748 /* KinzooTaskUITests */,
 				F03360212AEC09F5000E7748 /* Products */,
+				F033607C2AEC2EF4000E7748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +138,9 @@
 				F03360582AEC0A80000E7748 /* Presenter */,
 				F03360572AEC0A7C000E7748 /* View */,
 				F03360562AEC0A77000E7748 /* Model */,
+				F033606B2AEC2E29000E7748 /* Fonts */,
 				F033602F2AEC09F7000E7748 /* Assets.xcassets */,
+				F03360782AEC2E3A000E7748 /* Extensions */,
 				F03360312AEC09F7000E7748 /* LaunchScreen.storyboard */,
 				F03360342AEC09F7000E7748 /* Info.plist */,
 				F033602C2AEC09F6000E7748 /* KinzooTask.xcdatamodeld */,
@@ -141,6 +168,7 @@
 		F03360562AEC0A77000E7748 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F03360652AEC2D04000E7748 /* CharaterResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,7 +176,8 @@
 		F03360572AEC0A7C000E7748 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F03360272AEC09F5000E7748 /* ViewController.swift */,
+				F03360272AEC09F5000E7748 /* CharactersViewController.swift */,
+				F03360672AEC2DC0000E7748 /* CharacterCardCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +185,7 @@
 		F03360582AEC0A80000E7748 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F03360692AEC2DE5000E7748 /* CharacterPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -169,6 +199,34 @@
 				F03360602AEC0AD6000E7748 /* APIManager.swift */,
 			);
 			path = APIManager;
+			sourceTree = "<group>";
+		};
+		F033606B2AEC2E29000E7748 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F033606C2AEC2E29000E7748 /* Itim-Regular.ttf */,
+				F033606D2AEC2E29000E7748 /* SignikaNegative-Bold.ttf */,
+				F033606E2AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf */,
+				F033606F2AEC2E29000E7748 /* SignikaNegative-Medium.ttf */,
+				F03360702AEC2E29000E7748 /* SignikaNegative-Regular.ttf */,
+				F03360712AEC2E29000E7748 /* SignikaNegative-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F03360782AEC2E3A000E7748 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F03360792AEC2E42000E7748 /* Font.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F033607C2AEC2EF4000E7748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +245,10 @@
 			dependencies = (
 			);
 			name = KinzooTask;
+			packageProductDependencies = (
+				F033607D2AEC2EF4000E7748 /* SDWebImage */,
+				F033607F2AEC2EF7000E7748 /* SDWebImageMapKit */,
+			);
 			productName = KinzooTask;
 			productReference = F03360202AEC09F5000E7748 /* KinzooTask.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +321,9 @@
 				Base,
 			);
 			mainGroup = F03360172AEC09F5000E7748;
+			packageReferences = (
+				F033607B2AEC2EEB000E7748 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = F03360212AEC09F5000E7748 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,8 +340,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360722AEC2E29000E7748 /* Itim-Regular.ttf in Resources */,
 				F03360332AEC09F7000E7748 /* LaunchScreen.storyboard in Resources */,
+				F03360742AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf in Resources */,
+				F03360772AEC2E29000E7748 /* SignikaNegative-Light.ttf in Resources */,
 				F03360302AEC09F7000E7748 /* Assets.xcassets in Resources */,
+				F03360762AEC2E29000E7748 /* SignikaNegative-Regular.ttf in Resources */,
+				F03360732AEC2E29000E7748 /* SignikaNegative-Bold.ttf in Resources */,
+				F03360752AEC2E29000E7748 /* SignikaNegative-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,11 +375,15 @@
 				F03360612AEC0AD6000E7748 /* APIManager.swift in Sources */,
 				F033605B2AEC0AA4000E7748 /* APIEndpoints.swift in Sources */,
 				F033602E2AEC09F6000E7748 /* KinzooTask.xcdatamodeld in Sources */,
-				F03360282AEC09F5000E7748 /* ViewController.swift in Sources */,
+				F03360282AEC09F5000E7748 /* CharactersViewController.swift in Sources */,
 				F03360242AEC09F5000E7748 /* AppDelegate.swift in Sources */,
+				F03360682AEC2DC0000E7748 /* CharacterCardCell.swift in Sources */,
 				F033605D2AEC0AB1000E7748 /* APIRequestConfig.swift in Sources */,
 				F033605F2AEC0AC1000E7748 /* APIResponseHandler.swift in Sources */,
+				F033607A2AEC2E42000E7748 /* Font.swift in Sources */,
+				F033606A2AEC2DE5000E7748 /* CharacterPresenter.swift in Sources */,
 				F03360262AEC09F5000E7748 /* SceneDelegate.swift in Sources */,
+				F03360662AEC2D04000E7748 /* CharaterResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +730,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F033607B2AEC2EEB000E7748 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F033607D2AEC2EF4000E7748 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F033607B2AEC2EEB000E7748 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F033607F2AEC2EF7000E7748 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F033607B2AEC2EEB000E7748 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F033602C2AEC09F6000E7748 /* KinzooTask.xcdatamodeld */ = {
