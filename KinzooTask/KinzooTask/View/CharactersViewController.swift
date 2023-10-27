@@ -99,6 +99,11 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = ProfileVC(character: characters?[indexPath.row])
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
     func presentCharacters(with result: Result<[CartoonCharacter], Error>) {
         switch result {
         case .success(let result):
