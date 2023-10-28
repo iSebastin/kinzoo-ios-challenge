@@ -198,10 +198,12 @@ final class ProfileVC: UIViewController {
     func setupNavigation() {
         title = "Profile"
         let appearance = UINavigationBarAppearance()
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.signika(.semiBold, size: 22)]
+        appearance.backgroundColor = .lightCoral
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.signika(.semiBold, size: 22)]
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.signika(.semiBold, size: 20)]
         navigationItem.standardAppearance = appearance
         navigationItem.scrollEdgeAppearance = appearance
+        navigationController?.navigationBar.tintColor = .white
     }
     
     @objc func buttonAction(sender: UIButton!) {

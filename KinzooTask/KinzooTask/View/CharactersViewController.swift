@@ -83,7 +83,8 @@ final class CharactersViewController: UIViewController {
     private func setupNavigation() {
         title = "Characters"
         let appearance = UINavigationBarAppearance()
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.signika(.semiBold, size: 22)]
+        appearance.backgroundColor = .lightCoral
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.signika(.semiBold, size: 22)]
         navigationItem.standardAppearance = appearance
         navigationItem.scrollEdgeAppearance = appearance
     }
