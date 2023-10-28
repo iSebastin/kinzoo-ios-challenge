@@ -5,14 +5,19 @@
 //  Created by Victor Sebastian on 2023-10-27.
 //
 
+import Combine
 import UIKit
 import SDWebImage
+import Network
 
 final class CharactersViewController: UIViewController {
     
     private var collectionview: UICollectionView!
-    private var characters: [CartoonCharacter]?
-    private let presenter = CharacterPresenter()
+    var characters: [CartoonCharacter]?
+    var presenter: CharacterServiceProtocol
+    let monitor = NWPathMonitor()
+    var isNetworkConnected = false
+
     
     private var flowLayout: UICollectionViewFlowLayout {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -31,10 +36,17 @@ final class CharactersViewController: UIViewController {
         return spinner
     }()
     
+    init(presenter: CharacterServiceProtocol = CharacterServicePresenter()) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .lightCoral
+        
+        //NetworkMonitoring
+        monitorForNetwork()
         
         //Views
         setupNavigation()
@@ -72,21 +84,27 @@ final class CharactersViewController: UIViewController {
         title = "Characters"
         let appearance = UINavigationBarAppearance()
         appearance.titleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.signika(.semiBold, size: 22)]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.signika(.semiBold, size: 35)]
         navigationItem.standardAppearance = appearance
         navigationItem.scrollEdgeAppearance = appearance
     }
     
-    deinit {
-        debugPrint("CharactersViewController Deinit")
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
 extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDataSource, CharacterPresenterDelegate {
-
+    
     private func fetchCharactersAPI() {
-        startLoading()
-        presenter.getCharacters()
+        if isNetworkConnected {
+            startLoading()
+            presenter.getCharacters()
+        } else {
+            startLoading()
+            // Load Local Data
+            characters = UserDefaultHelper.retreiveObject(for: .characterData, type: [CartoonCharacter].self)
+            finishLoading()
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -127,6 +145,18 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
             self?.spinner.isHidden = true
             self?.spinner.stopAnimating()
         }
+        //Save to UserDefault
+        if let characters = characters, !characters.isEmpty {
+            UserDefaultHelper.save(object: characters, for: .characterData)
+        }
+    }
+    
+    private func monitorForNetwork() {
+        monitor.pathUpdateHandler = { [weak self] path in
+            self?.isNetworkConnected = path.status == .satisfied
+        }
+        
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
     }
 }
-

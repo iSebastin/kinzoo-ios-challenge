@@ -34,6 +34,28 @@
 		F03360802AEC2EF7000E7748 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F033607F2AEC2EF7000E7748 /* SDWebImageMapKit */; };
 		F03360B22AEC537D000E7748 /* ProfileContentSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360B12AEC537D000E7748 /* ProfileContentSubview.swift */; };
 		F03360B42AEC53AA000E7748 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360B32AEC53AA000E7748 /* ProfileViewController.swift */; };
+		F03360BE2AECAE6D000E7748 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360BC2AECAE6D000E7748 /* UserDefaultHelper.swift */; };
+		F03360BF2AECAE6D000E7748 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360BC2AECAE6D000E7748 /* UserDefaultHelper.swift */; };
+		F03360C02AECAE6D000E7748 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360BD2AECAE6D000E7748 /* JsonHelper.swift */; };
+		F03360C12AECAE6D000E7748 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360BD2AECAE6D000E7748 /* JsonHelper.swift */; };
+		F03360C22AECAE83000E7748 /* SignikaNegative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606D2AEC2E29000E7748 /* SignikaNegative-Bold.ttf */; };
+		F03360C32AECAE83000E7748 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605A2AEC0AA4000E7748 /* APIEndpoints.swift */; };
+		F03360C42AECAE83000E7748 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360692AEC2DE5000E7748 /* CharacterPresenter.swift */; };
+		F03360C52AECAE83000E7748 /* ProfileContentSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360B12AEC537D000E7748 /* ProfileContentSubview.swift */; };
+		F03360C62AECAE83000E7748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F033602F2AEC09F7000E7748 /* Assets.xcassets */; };
+		F03360C72AECAE83000E7748 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360B32AEC53AA000E7748 /* ProfileViewController.swift */; };
+		F03360C82AECAE83000E7748 /* CharaterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360652AEC2D04000E7748 /* CharaterResponse.swift */; };
+		F03360C92AECAE83000E7748 /* SignikaNegative-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606E2AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf */; };
+		F03360CA2AECAE83000E7748 /* SignikaNegative-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03360712AEC2E29000E7748 /* SignikaNegative-Light.ttf */; };
+		F03360CB2AECAE83000E7748 /* Itim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606C2AEC2E29000E7748 /* Itim-Regular.ttf */; };
+		F03360CC2AECAE83000E7748 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360602AEC0AD6000E7748 /* APIManager.swift */; };
+		F03360CD2AECAE83000E7748 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360272AEC09F5000E7748 /* CharactersViewController.swift */; };
+		F03360CE2AECAE83000E7748 /* APIRequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605C2AEC0AB1000E7748 /* APIRequestConfig.swift */; };
+		F03360CF2AECAE83000E7748 /* CharacterCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360672AEC2DC0000E7748 /* CharacterCardCell.swift */; };
+		F03360D02AECAE83000E7748 /* SignikaNegative-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F033606F2AEC2E29000E7748 /* SignikaNegative-Medium.ttf */; };
+		F03360D12AECAE83000E7748 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360792AEC2E42000E7748 /* Font.swift */; };
+		F03360D22AECAE83000E7748 /* SignikaNegative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03360702AEC2E29000E7748 /* SignikaNegative-Regular.ttf */; };
+		F03360D32AECAE83000E7748 /* APIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605E2AEC0AC1000E7748 /* APIResponseHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +105,8 @@
 		F03360792AEC2E42000E7748 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		F03360B12AEC537D000E7748 /* ProfileContentSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContentSubview.swift; sourceTree = "<group>"; };
 		F03360B32AEC53AA000E7748 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F03360BC2AECAE6D000E7748 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
+		F03360BD2AECAE6D000E7748 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +172,7 @@
 				F03360312AEC09F7000E7748 /* LaunchScreen.storyboard */,
 				F03360342AEC09F7000E7748 /* Info.plist */,
 				F033602C2AEC09F6000E7748 /* KinzooTask.xcdatamodeld */,
+				F03360BB2AECAE6D000E7748 /* Helper */,
 			);
 			path = KinzooTask;
 			sourceTree = "<group>";
@@ -249,6 +274,15 @@
 				F03360B12AEC537D000E7748 /* ProfileContentSubview.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		F03360BB2AECAE6D000E7748 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F03360BC2AECAE6D000E7748 /* UserDefaultHelper.swift */,
+				F03360BD2AECAE6D000E7748 /* JsonHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +411,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360CB2AECAE83000E7748 /* Itim-Regular.ttf in Resources */,
+				F03360C62AECAE83000E7748 /* Assets.xcassets in Resources */,
+				F03360C92AECAE83000E7748 /* SignikaNegative-SemiBold.ttf in Resources */,
+				F03360C22AECAE83000E7748 /* SignikaNegative-Bold.ttf in Resources */,
+				F03360D22AECAE83000E7748 /* SignikaNegative-Regular.ttf in Resources */,
+				F03360CA2AECAE83000E7748 /* SignikaNegative-Light.ttf in Resources */,
+				F03360D02AECAE83000E7748 /* SignikaNegative-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,9 +436,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F03360612AEC0AD6000E7748 /* APIManager.swift in Sources */,
+				F03360BE2AECAE6D000E7748 /* UserDefaultHelper.swift in Sources */,
 				F033605B2AEC0AA4000E7748 /* APIEndpoints.swift in Sources */,
 				F033602E2AEC09F6000E7748 /* KinzooTask.xcdatamodeld in Sources */,
 				F03360282AEC09F5000E7748 /* CharactersViewController.swift in Sources */,
+				F03360C02AECAE6D000E7748 /* JsonHelper.swift in Sources */,
 				F03360B42AEC53AA000E7748 /* ProfileViewController.swift in Sources */,
 				F03360242AEC09F5000E7748 /* AppDelegate.swift in Sources */,
 				F03360682AEC2DC0000E7748 /* CharacterCardCell.swift in Sources */,
@@ -415,7 +458,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360C12AECAE6D000E7748 /* JsonHelper.swift in Sources */,
+				F03360CE2AECAE83000E7748 /* APIRequestConfig.swift in Sources */,
+				F03360C42AECAE83000E7748 /* CharacterPresenter.swift in Sources */,
+				F03360C82AECAE83000E7748 /* CharaterResponse.swift in Sources */,
+				F03360CC2AECAE83000E7748 /* APIManager.swift in Sources */,
+				F03360CF2AECAE83000E7748 /* CharacterCardCell.swift in Sources */,
+				F03360BF2AECAE6D000E7748 /* UserDefaultHelper.swift in Sources */,
+				F03360D12AECAE83000E7748 /* Font.swift in Sources */,
+				F03360C52AECAE83000E7748 /* ProfileContentSubview.swift in Sources */,
+				F03360C72AECAE83000E7748 /* ProfileViewController.swift in Sources */,
 				F033603E2AEC09F7000E7748 /* KinzooTaskTests.swift in Sources */,
+				F03360CD2AECAE83000E7748 /* CharactersViewController.swift in Sources */,
+				F03360D32AECAE83000E7748 /* APIResponseHandler.swift in Sources */,
+				F03360C32AECAE83000E7748 /* APIEndpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

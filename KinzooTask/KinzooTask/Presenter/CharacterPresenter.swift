@@ -7,14 +7,19 @@
 
 import UIKit
 
+protocol CharacterServiceProtocol {
+    func getCharacters()
+    func setViewDelegate(delegate: CharacterDelegate)
+}
+
 protocol CharacterPresenterDelegate: AnyObject {
     func presentCharacters(with result: Result<[CartoonCharacter], Error>)
 }
 
 typealias CharacterDelegate = CharacterPresenterDelegate & UIViewController
 
-final class CharacterPresenter {
-    private weak var delegate: CharacterDelegate?
+class CharacterServicePresenter: CharacterServiceProtocol {
+    weak var delegate: CharacterDelegate?
     
     func setViewDelegate(delegate: CharacterDelegate) {
         self.delegate = delegate
@@ -28,13 +33,12 @@ final class CharacterPresenter {
         networkManager.requestData(request: requestData, responseHandler: responseHandler) { [weak self] result in
             switch result {
             case .success(let response):
-                debugPrint("Success: \(response.results.count)")
+                print("Success: \(response.results.count)")
                 self?.delegate?.presentCharacters(with: .success(response.results))
             case .failure(let error):
-                debugPrint("Error: \(error)")
+                print("Error: \(error)")
                 self?.delegate?.presentCharacters(with: .failure(error))
             }
         }
     }
 }
-
