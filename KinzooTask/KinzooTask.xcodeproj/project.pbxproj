@@ -62,6 +62,7 @@
 		F03360DD2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */; };
 		F03360DE2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */; };
 		F03360E42AECB045000E7748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03360DF2AECAF63000E7748 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F03360EA2AED5B65000E7748 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360E92AED5B65000E7748 /* EpisodesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		F03360D62AECAF3C000E7748 /* CharactersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewControllerTests.swift; sourceTree = "<group>"; };
 		F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCharactersAPI.json; sourceTree = "<group>"; };
 		F03360DF2AECAF63000E7748 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F03360E92AED5B65000E7748 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				F03360B52AEC53C4000E7748 /* CollectionViewCell */,
 				F03360B62AEC53D4000E7748 /* Subviews */,
 				F03360272AEC09F5000E7748 /* CharactersViewController.swift */,
+				F03360E92AED5B65000E7748 /* EpisodesViewController.swift */,
 				F03360B32AEC53AA000E7748 /* ProfileViewController.swift */,
 			);
 			path = View;
@@ -480,6 +483,7 @@
 				F033605D2AEC0AB1000E7748 /* APIRequestConfig.swift in Sources */,
 				F033605F2AEC0AC1000E7748 /* APIResponseHandler.swift in Sources */,
 				F033607A2AEC2E42000E7748 /* Font.swift in Sources */,
+				F03360EA2AED5B65000E7748 /* EpisodesViewController.swift in Sources */,
 				F033606A2AEC2DE5000E7748 /* CharacterPresenter.swift in Sources */,
 				F03360262AEC09F5000E7748 /* SceneDelegate.swift in Sources */,
 				F03360D92AECAF3C000E7748 /* CharactersAPIMock.swift in Sources */,

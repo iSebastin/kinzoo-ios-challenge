@@ -207,7 +207,10 @@ final class ProfileVC: UIViewController {
     }
     
     @objc func buttonAction(sender: UIButton!) {
-        print("Button tapped")
+        if let episodes = character?.episode {
+            let detailVC = EpisodesViewController(episodes: episodes)
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
     
     required init?(coder: NSCoder) {
