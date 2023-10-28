@@ -56,6 +56,12 @@
 		F03360D12AECAE83000E7748 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360792AEC2E42000E7748 /* Font.swift */; };
 		F03360D22AECAE83000E7748 /* SignikaNegative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03360702AEC2E29000E7748 /* SignikaNegative-Regular.ttf */; };
 		F03360D32AECAE83000E7748 /* APIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F033605E2AEC0AC1000E7748 /* APIResponseHandler.swift */; };
+		F03360D92AECAF3C000E7748 /* CharactersAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360D52AECAF3C000E7748 /* CharactersAPIMock.swift */; };
+		F03360DA2AECAF3C000E7748 /* CharactersAPIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360D52AECAF3C000E7748 /* CharactersAPIMock.swift */; };
+		F03360DC2AECAF3C000E7748 /* CharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360D62AECAF3C000E7748 /* CharactersViewControllerTests.swift */; };
+		F03360DD2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */; };
+		F03360DE2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */; };
+		F03360E42AECB045000E7748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03360DF2AECAF63000E7748 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,10 @@
 		F03360B32AEC53AA000E7748 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F03360BC2AECAE6D000E7748 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		F03360BD2AECAE6D000E7748 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		F03360D52AECAF3C000E7748 /* CharactersAPIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersAPIMock.swift; sourceTree = "<group>"; };
+		F03360D62AECAF3C000E7748 /* CharactersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewControllerTests.swift; sourceTree = "<group>"; };
+		F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCharactersAPI.json; sourceTree = "<group>"; };
+		F03360DF2AECAF63000E7748 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360E42AECB045000E7748 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				F033603D2AEC09F7000E7748 /* KinzooTaskTests.swift */,
+				F03360D62AECAF3C000E7748 /* CharactersViewControllerTests.swift */,
+				F03360D42AECAF3C000E7748 /* MockAPIs */,
+				F03360D72AECAF3C000E7748 /* MockData */,
 			);
 			path = KinzooTaskTests;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 		F033607C2AEC2EF4000E7748 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F03360DF2AECAF63000E7748 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,6 +298,22 @@
 				F03360BD2AECAE6D000E7748 /* JsonHelper.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		F03360D42AECAF3C000E7748 /* MockAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				F03360D52AECAF3C000E7748 /* CharactersAPIMock.swift */,
+			);
+			path = MockAPIs;
+			sourceTree = "<group>";
+		};
+		F03360D72AECAF3C000E7748 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F03360722AEC2E29000E7748 /* Itim-Regular.ttf in Resources */,
+				F03360DD2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */,
 				F03360332AEC09F7000E7748 /* LaunchScreen.storyboard in Resources */,
 				F03360742AEC2E29000E7748 /* SignikaNegative-SemiBold.ttf in Resources */,
 				F03360772AEC2E29000E7748 /* SignikaNegative-Light.ttf in Resources */,
@@ -413,6 +445,7 @@
 			files = (
 				F03360CB2AECAE83000E7748 /* Itim-Regular.ttf in Resources */,
 				F03360C62AECAE83000E7748 /* Assets.xcassets in Resources */,
+				F03360DE2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */,
 				F03360C92AECAE83000E7748 /* SignikaNegative-SemiBold.ttf in Resources */,
 				F03360C22AECAE83000E7748 /* SignikaNegative-Bold.ttf in Resources */,
 				F03360D22AECAE83000E7748 /* SignikaNegative-Regular.ttf in Resources */,
@@ -449,6 +482,7 @@
 				F033607A2AEC2E42000E7748 /* Font.swift in Sources */,
 				F033606A2AEC2DE5000E7748 /* CharacterPresenter.swift in Sources */,
 				F03360262AEC09F5000E7748 /* SceneDelegate.swift in Sources */,
+				F03360D92AECAF3C000E7748 /* CharactersAPIMock.swift in Sources */,
 				F03360B22AEC537D000E7748 /* ProfileContentSubview.swift in Sources */,
 				F03360662AEC2D04000E7748 /* CharaterResponse.swift in Sources */,
 			);
@@ -458,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03360DC2AECAF3C000E7748 /* CharactersViewControllerTests.swift in Sources */,
 				F03360C12AECAE6D000E7748 /* JsonHelper.swift in Sources */,
 				F03360CE2AECAE83000E7748 /* APIRequestConfig.swift in Sources */,
 				F03360C42AECAE83000E7748 /* CharacterPresenter.swift in Sources */,
@@ -466,6 +501,7 @@
 				F03360CF2AECAE83000E7748 /* CharacterCardCell.swift in Sources */,
 				F03360BF2AECAE6D000E7748 /* UserDefaultHelper.swift in Sources */,
 				F03360D12AECAE83000E7748 /* Font.swift in Sources */,
+				F03360DA2AECAF3C000E7748 /* CharactersAPIMock.swift in Sources */,
 				F03360C52AECAE83000E7748 /* ProfileContentSubview.swift in Sources */,
 				F03360C72AECAE83000E7748 /* ProfileViewController.swift in Sources */,
 				F033603E2AEC09F7000E7748 /* KinzooTaskTests.swift in Sources */,
@@ -697,7 +733,6 @@
 		F03360512AEC09F7000E7748 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -707,9 +742,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.KinzooTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinzooTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KinzooTask";
 			};
 			name = Debug;
@@ -717,7 +755,6 @@
 		F03360522AEC09F7000E7748 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -727,9 +764,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.KinzooTaskTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinzooTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KinzooTask";
 			};
 			name = Release;
@@ -745,9 +785,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.KinzooTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = KinzooTask;
 			};
 			name = Debug;
@@ -763,9 +806,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.victor.KinzooTaskUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = KinzooTask;
 			};
 			name = Release;
