@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - CharacterResponse
 struct CharacterResponse: Codable {
     let info: Info
     let results: [CartoonCharacter]
@@ -20,7 +20,7 @@ struct Info: Codable {
     let prev: String?
 }
 
-// MARK: - Result
+// MARK: - CartoonCharacter
 struct CartoonCharacter: Codable {
     let id: Int
     let name: String

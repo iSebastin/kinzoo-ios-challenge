@@ -63,6 +63,7 @@
 		F03360DE2AECAF3C000E7748 /* MockCharactersAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = F03360D82AECAF3C000E7748 /* MockCharactersAPI.json */; };
 		F03360E42AECB045000E7748 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03360DF2AECAF63000E7748 /* XCTest.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F03360EA2AED5B65000E7748 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360E92AED5B65000E7748 /* EpisodesViewController.swift */; };
+		F03360EB2AED6554000E7748 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03360E92AED5B65000E7748 /* EpisodesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -497,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F03360DC2AECAF3C000E7748 /* CharactersViewControllerTests.swift in Sources */,
+				F03360EB2AED6554000E7748 /* EpisodesViewController.swift in Sources */,
 				F03360C12AECAE6D000E7748 /* JsonHelper.swift in Sources */,
 				F03360CE2AECAE83000E7748 /* APIRequestConfig.swift in Sources */,
 				F03360C42AECAE83000E7748 /* CharacterPresenter.swift in Sources */,

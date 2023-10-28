@@ -14,7 +14,7 @@ final class CharactersViewController: UIViewController {
     
     private var collectionview: UICollectionView!
     var characters: [CartoonCharacter]?
-    var presenter: CharacterServiceProtocol
+    var presenter: CharacterServiceProtocol = CharacterServicePresenter()
     let monitor = NWPathMonitor()
     var isNetworkConnected = false
 
@@ -35,11 +35,6 @@ final class CharactersViewController: UIViewController {
         spinner.translatesAutoresizingMaskIntoConstraints = false
         return spinner
     }()
-    
-    init(presenter: CharacterServiceProtocol = CharacterServicePresenter()) {
-        self.presenter = presenter
-        super.init(nibName: nil, bundle: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,20 +83,15 @@ final class CharactersViewController: UIViewController {
         navigationItem.standardAppearance = appearance
         navigationItem.scrollEdgeAppearance = appearance
     }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 }
 
 extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDataSource, CharacterPresenterDelegate {
     
     private func fetchCharactersAPI() {
+        startLoading()
         if isNetworkConnected {
-            startLoading()
             presenter.getCharacters()
         } else {
-            startLoading()
             // Load Local Data
             characters = UserDefaultHelper.retreiveObject(for: .characterData, type: [CartoonCharacter].self)
             finishLoading()
@@ -142,10 +132,10 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
     private func finishLoading() {
         DispatchQueue.main.async { [weak self] in
             self?.collectionview.reloadData()
-            self?.collectionview.isHidden = false
-            self?.spinner.isHidden = true
-            self?.spinner.stopAnimating()
         }
+        collectionview.isHidden = false
+        spinner.isHidden = true
+        spinner.stopAnimating()
         //Save to UserDefault
         if let characters = characters, !characters.isEmpty {
             UserDefaultHelper.save(object: characters, for: .characterData)
