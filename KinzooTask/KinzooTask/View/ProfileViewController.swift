@@ -217,8 +217,4 @@ final class ProfileVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {
-        debugPrint("ProfileVC Deinitialized")
-    }
-    
 }
